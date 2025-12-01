@@ -4,6 +4,7 @@
 - .NET Core 8.0
 - SQLite (Soccer Dataset)
 - Semantic Kernel
+- Angular 20 for a basic UI
 
 ## User Flow
 User types their query in natural language, the system generates the relevant SQL query, retrieves the data and returns it to the user.
