@@ -1,0 +1,29 @@
+﻿Extract ONLY the schema elements needed to answer the user's query.
+
+Include:
+- Tables directly referenced or required for JOINs
+- Columns needed for SELECT, WHERE, JOIN, ORDER BY, or GROUP BY
+- Foreign key relationships between included tables
+
+Exclude:
+- Unrelated tables and columns
+- Unnecessary details
+
+Format as:
+Table: table_name
+- column1 (type) [PK/FK if applicable]
+- column2 (type)
+
+FULL SCHEMA:
+{{SCHEMA}}
+
+CONVERSATION:
+{{CONVERSATION}}
+
+RECENT:
+{{RECENT}}
+
+USER QUERY:
+{{USER}}
+
+Output relevant schema only.

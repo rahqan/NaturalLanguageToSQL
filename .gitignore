@@ -1,0 +1,66 @@
+## Build output
+bin/
+obj/
+out/
+Debug/
+Release/
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## OS-generated files
+.DS_Store
+Thumbs.db
+
+## NuGet
+*.nupkg
+packages/
+.nuget/
+
+## Logs
+*.log
+
+## Environment variables / secrets
+*.env
+appsettings.*.json   # ignore environment specific configs
+!appsettings.json    # keep the base config
+
+## SQLite Database Files
+*.db
+*.db3
+*.sqlite
+*.sqlite3
+database.sqlite
+Data/*.sqlite
+
+
+ Data/database.sqlite,Mode= SqliteOpenMode.ReadOnly
+Data/database.sqlite.zip
+
+
+Data/*.db
+Data/*.db3
+
+## Backup or temporary files
+*.tmp
+*.bak
+*Backup*
+*.old
+
+## Plugin prompt/output files (if auto-generated)
+Plugin/Prompts/*.generated.txt
+Plugin/Prompts/*.cache
+Plugin/*/cache/
+Plugin/*/temp/
+
+## Old project artifacts
+*.Backup.tmp
+*.temp
+
+## Rider / JetBrains
+.idea/
+*.iml

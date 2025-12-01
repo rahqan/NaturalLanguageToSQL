@@ -1,0 +1,7 @@
+﻿Summarize the following conversation between a user and an AI assistant. 
+Keep all important facts, entities, and context. 
+Do not add information not present in the conversation.
+Respond with only the summary text.
+
+CONVERSATION:
+{{CONVERSATION}}

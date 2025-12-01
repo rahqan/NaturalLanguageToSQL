@@ -1,0 +1,27 @@
+﻿Fix the failed SQL query below.
+
+SCHEMA:
+{{SCHEMA}}
+
+USER QUESTION:
+{{USER}}
+
+FAILED QUERY:
+{{FAILED_SQL}}
+
+ERROR:
+{{ERROR}}
+
+COMMON FIXES:
+- Check column/table names against schema (case-sensitive)
+- Verify JOIN conditions use correct foreign keys
+- Add GROUP BY for all non-aggregated SELECT columns when using aggregates
+- Use DISTINCT to eliminate duplicates from multi-row joins
+- Ensure date/time comparisons use proper SQLite syntax
+- Check for ambiguous column references (use table.column)
+
+PREVIOUS CONTEXT:
+{{CONVERSATION}}
+{{RECENT}}
+
+Output corrected SQL only. No explanations or formatting.

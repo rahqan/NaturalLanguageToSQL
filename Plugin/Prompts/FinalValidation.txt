@@ -1,0 +1,14 @@
+﻿Validate this SQL query and results:
+
+USER QUESTION: {question}
+GENERATED SQL: {query}
+RESULTS: {answerText}
+
+CONTEXT:{conext}
+
+Check if SQL correctly answers the question and results make sense.
+
+Respond exactly as:
+VALID: YES or NO
+CONFIDENCE: 0-100
+FEEDBACK: your comments

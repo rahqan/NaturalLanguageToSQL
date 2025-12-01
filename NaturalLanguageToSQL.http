@@ -1,0 +1,6 @@
+@NaturalLanguageToSQL_HostAddress = http://localhost:5187
+
+GET {{NaturalLanguageToSQL_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
