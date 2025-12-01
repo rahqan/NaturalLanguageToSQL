@@ -36,9 +36,7 @@ appsettings.*.json   # ignore environment specific configs
 *.sqlite3
 database.sqlite
 Data/*.sqlite
-
-
- Data/database.sqlite,Mode= SqliteOpenMode.ReadOnly
+Data/database.sqlite,Mode= SqliteOpenMode.ReadOnly
 Data/database.sqlite.zip
 
 
