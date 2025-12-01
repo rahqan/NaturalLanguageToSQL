@@ -1,3 +1,4 @@
+
 # Natural Language Database Retriever
 
 ## Tech Stack
@@ -45,3 +46,4 @@ Execute Query
 Since schemas can grow significantly in size, RAG (semantic search) may be implemented in the future to:
 - Reduce LLM API call costs (using embedding generation models instead)
 - Potentially reduce response time
+
