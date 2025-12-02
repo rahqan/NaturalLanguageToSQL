@@ -13,14 +13,17 @@ User types their query in natural language, the system generates the relevant SQ
 ## Technical Details
 
 ### Schema Management
-The database schema can be very large, so we first make a call to the LLM to get the relevant part of the schema for the query. This relevant schema is then passed to the LLM along with the query and chat history.
+The database schema can be very large, so we first make a call to the LLM to get the relevant part of the schema for the query. This relevant schema is then passed to the LLM along with the query and chat history. To avoid this call in future we can use semantic search since embedding generation models and vector database querying for schema will be cheaper.
 
 ### Chat History
 1. **Truncated History**: Keeps the previous 4 chats between user and bot
-2. **Summarized Chat**: Maintains a summary of the conversation and runs after every 4 chats to summarize everything
+2. **Summarized Chat**: Maintains a summary of the conversation and runs after every 4 chats to summarize everything.
 
 ### Session Management
 Singleton pattern is used for the kernel, so we currently don't need to manage sessions and only one connection is maintained.
+
+### Retry
+A retry logic is also added which happens in case of a sql exception, for this we send the whole schema for query generation.
 
 ## Backend Flow
 ```
